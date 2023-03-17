@@ -2,10 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "baseBranches": ["master", "test-branch"],
+  "useBaseBranchConfig": "merge",
   "packageRules": [
     {
-      "groupName": "all test",
-      "packageName": "npm",
+      "groupName": "new group",
+      "packagePatterns": "^.*$",
       "followTag": "latest",
       "separateMajorMinor": "false"
     }
