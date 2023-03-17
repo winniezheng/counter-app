@@ -1,13 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "baseBranches": ["master", "test-branch"],
-  "useBaseBranchConfig": "merge",
+  "baseBranches": ["test-branch"],
   "recreateClosed": true,
+  "useBaseBranchConfig": "merge",
+  "forkProcessing": "enabled",
+  "enabled": true,
   "packageRules": [
     {
       "groupName": "new test group",
-      "matchPackageNames": ["husky"],
+      "matchPackageNames": ["react-tooltip", "npm"],
       "followTag": "latest",
       "separateMajorMinor": "false"
     }
