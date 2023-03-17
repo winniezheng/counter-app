@@ -4,7 +4,7 @@
   "baseBranches": ["master", "test-branch"],
   "packageRules": [
     {
-      "groupName": "test-branch group",
+      "groupName": "all test",
       "packageName": "npm",
       "followTag": "latest",
       "separateMajorMinor": "false"
