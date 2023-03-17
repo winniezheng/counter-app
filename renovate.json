@@ -3,10 +3,11 @@
   "extends": ["config:base"],
   "baseBranches": ["master", "test-branch"],
   "useBaseBranchConfig": "merge",
+  "recreateClosed": true,
   "packageRules": [
     {
-      "groupName": "new group",
-      "packagePatterns": "^.*$",
+      "groupName": "new test group",
+      "matchPackageNames": ["husky"],
       "followTag": "latest",
       "separateMajorMinor": "false"
     }
