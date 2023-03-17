@@ -2,10 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "baseBranches": ["master", "test-branch"],
+  "recreateClosed": true,
+  "useBaseBranchConfig": "merge",
   "packageRules": [
     {
-      "groupName": "new group",
-      "packagePatterns": "^.*$",
+      "groupName": "new test group",
+      "matchPackageNames": ["popper.js"],
       "followTag": "latest",
       "separateMajorMinor": "false"
     }
