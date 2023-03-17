@@ -5,8 +5,8 @@
   "useBaseBranchConfig": "merge",
   "packageRules": [
     {
-      "groupName": "new group",
-      "packagePatterns": "^.*$",
+      "groupName": "new test group",
+      "matchPackageNames": ["npm", "react"],
       "followTag": "latest",
       "separateMajorMinor": "false"
     }
